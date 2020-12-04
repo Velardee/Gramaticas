@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';">
+    <title>Gramaticas</title>
+    <style>
+
+        .containerTitulo{
+            background-color: #FB5D2E;
+            height: 22vh;
+            text-align: center;
+            color: white;
+            border-radius: 5px 5px 30px 30px;
+        }
+
+        .containerTitulo h1{
+            padding-top: 4%;
+        }
+        
+        .containerButton{
+            text-align: center;
+        }
+
+        .gramar{
+            text-align: center;
+        }
+
+        .example_c {
+             color: #494949 !important;
+            text-transform: uppercase;
+            text-decoration: none;
+            background: #ffffff;
+            padding: 15px;
+            border-radius: 40px;
+            border: 4px solid #8f8f8f !important;
+            display: inline-block;
+            transition: all 0.4s ease 0s;
+        }
+
+        .example_c:hover {
+            color: #ffffff !important;
+            background: #FBC32E;
+            border-color: #FBC32E !important;
+            transition: all 0.4s ease 0s;
+        }
+
+        .form{
+            display: grid;
+            width: 35%;
+            justify-content: center;
+            align-items: center;
+            margin-left: 33%;
+            padding-top: 3%;
+        }
+
+        .form label{
+            margin-bottom: 4%;
+            color: #FB5D2E;
+        }
+
+        .form input{
+            margin-bottom: 5%;
+            border-radius: 9px;
+            outline: none;
+            text-indent: 4px;
+            border: 1px solid #c7c7c7;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="containerTitulo">
+        <h1>Gramatica</h1>
+    </div>
+    <div class="gramar">
+        <h3>Dada la gramática: G = ({a,b,c}, {S,A,B}, S, P)</h3>
+        <p>
+            P = {
+                <br>
+
+                S -> λ
+
+                <br>
+                
+                S -> aAc
+
+                <br>
+                
+                A -> aA
+                
+                <br>
+
+                A -> Ac
+
+                <br>
+                
+                A -> B
+
+                <br>
+                
+                B -> b
+
+                <br>
+                
+                B -> Bb
+
+                <br>
+                
+                }
+        </p>
+    </div>
+
+    <div>
+        <div class="form">
+            <label for="">Ingresa la cadena para validar</label>
+            <input type="text" id="txtCadena">
+
+            <div class="containerButton">
+                <div class="button_cont">
+                    <a class="example_c" id="comprobar"  target="_blank" rel="nofollow noopener">Analizar</a>
+                </div>
+            </div>
+        </div>
+    
+        
+    </div>
+    <script src="secondary.js"></script>
+</body>
+
+</html>
